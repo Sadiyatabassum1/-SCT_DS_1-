@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+# Sample data for genders
+genders = ['Male', 'Female', 'Male', 'Female', 'Female', 'Male', 'Male', 'Female', 'Male', 'Female']
+
+# Counting the frequency of each gender
+gender_counts = {'Male': genders.count('Male'), 'Female': genders.count('Female')}
+
+# Plotting the bar chart
+plt.bar(gender_counts.keys(), gender_counts.values(), color=['blue', 'pink'])
+plt.title('Gender Distribution in Population')
+plt.xlabel('Gender')
+plt.ylabel('Frequency')
+plt.show()
