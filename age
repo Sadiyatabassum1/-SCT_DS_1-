@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+# Sample data for ages
+ages = [22, 25, 29, 22, 30, 35, 40, 45, 50, 55, 22, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75]
+
+# Plotting the histogram
+plt.hist(ages, bins=10, edgecolor='black')
+plt.title('Age Distribution in Population')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
